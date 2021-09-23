@@ -1,7 +1,16 @@
 # Music21中文文档
-本文档为[music21](https://pypi.org/project/music21/)文档的中文翻译。如果你发现了错误，欢迎提出[Issue](https://github.com/oxygen-dioxide/music21-zh-docs/issues)和[Pull Request](https://github.com/oxygen-dioxide/music21-zh-docs/pulls)。
+[github](https://github.com/oxygen-dioxide/music21-zh-docs) | 
+[gitee](https://gitee.com/oxygendioxide/music21-zh-docs) | 
+[gitlab](https://gitlab.com/oxygen-dioxide/music21-zh-docs) | 
+[bitbucket](https://bitbucket.org/oxygendioxide/music21-zh-docs/src/main/) | 
+[coding](https://oxygen-dioxide.coding.net/public/1/music21-zh-docs/git/files)
+
+## 关于本仓库
+本仓库为[music21](https://pypi.org/project/music21/)文档的中文翻译。如果你发现了错误，欢迎提出[Issue](https://github.com/oxygen-dioxide/music21-zh-docs/issues)和[Pull Request](https://github.com/oxygen-dioxide/music21-zh-docs/pulls)。
 
 music21是一款python乐理分析库，支持多种输入与输出格式，并良好适配了Jupyter Notebook，支持直接在页面上显示五线谱。
+
+本仓库的部分文档为Jupyter Notebook（.ipynb）格式，按照[这篇文章](https://gitee.com/oxygendioxide/pyvogen-docs/blob/main/%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE.md#jupyter-notebook%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE)的方法配置好后，即可下载运行。
 
 以下是music21文档目录，[原文链接](https://web.mit.edu/music21/doc/index.html#)
 
