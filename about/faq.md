@@ -9,7 +9,7 @@ Don't you hate FAQs that are not based on anything anyone's ever asked? 要提�
 todo
 
 ### music21的原生数据格式是什么？
-简要回答：没有，但没关系
+简要回答：没有，但没关系。
 
 详细回答：music21是一套用于处理和分析你已有或生成的音乐数据的工具箱。todo
 
@@ -22,3 +22,15 @@ todo
 - 如果你需要存储的数据结构太复杂，不能用以上方法存储，那么你应该有足够的经验自己创建一个数据格式。请考虑将你的解决方案贡献到music21以帮助我们改进。
 
 ### 用music21可以合成新的声音吗？
+是，也不是。music21处理符号音乐而不是音频波型。但是，符号音乐数据可用于很多音频合成包。所以，你可以用music21对象调用其他合成包来合成。
+
+### music21可以直接从图片或pdf读入乐谱吗？
+抱歉，这超出了music21的能力范围。这个技术叫OMR（Optical Music Recognition，光学乐谱识别），是一个完整的，独立的研究领域。Audiveris是一个开源的OMR套件，其开发团队已经在开发商业软件SmartScore的过程中获得了经验。music21有一套模块用于优化OMR的输出结果，参见[music21.omr.correctors](https://web.mit.edu/music21/doc/moduleReference/moduleOmrCorrectors.html#moduleomrcorrectors)
+
+### 我想尝试music21，如何安装？
+[用户指南，第1章：安装与上手music21](../userguide/1.ipynb)
+
+### 我用的是GNU/Linux或者Unix系统，在配置music21时遇到困难，你们能提供帮助吗？
+不幸的是，由于开源操作系统的碎片化，开发团队只能为Mac和Windows用户提供免费帮助（但是提供付费支持，看下面）
+
+todo
