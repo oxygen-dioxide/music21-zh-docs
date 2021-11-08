@@ -9,7 +9,7 @@ pip install music21
 
 #安装与配置musescore
 sudo apt install musescore3 -y
-python3 setup.py
+python3 setup/gitpod/setup.py
 
 #安装vscode插件
 code --install-extension ms-python.python

@@ -10,7 +10,11 @@ music21是一款python乐理分析库，支持多种输入与输出格式，并�
 
 本仓库为[music21](https://pypi.org/project/music21/)文档的中文翻译。如果你发现了错误，或者有更好的翻译方式欢迎提出[Issue](https://github.com/oxygen-dioxide/music21-zh-docs/issues)和[Pull Request](https://github.com/oxygen-dioxide/music21-zh-docs/pulls)。
 
-本仓库的部分文档为Jupyter Notebook（.ipynb）格式，按照[这篇文章](https://gitee.com/oxygendioxide/pyvogen-docs/blob/main/%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE.md#jupyter-notebook%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE)的方法配置好后，即可下载运行。所有文章均在我的电脑上重新运行，因此某些输出可能与原文有区别（例如文件路径、乐谱输出格式等），不影响使用。
+本仓库的大部分文档为Jupyter Notebook（.ipynb）格式，按照[这篇文章](https://gitee.com/oxygendioxide/pyvogen-docs/blob/main/%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE.md#jupyter-notebook%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE)的方法配置好后，即可下载运行。所有文章均在我的电脑上重新运行，因此某些输出可能与原文有区别（例如文件路径、乐谱输出格式等），不影响使用。
+
+## 运行前的准备工作
+### 在线运行
+- [在Gitpod上运行](setup\gitpod\readme.md)
 
 以下是music21文档目录，[原文链接](https://web.mit.edu/music21/doc/index.html#)
 
@@ -31,7 +35,7 @@ music21是一款python乐理分析库，支持多种输入与输出格式，并�
 - 用户指南，第5章：嵌套列表，函数与递归
 - [用户指南，第6章：流(II)：分层，递归与扁平化](userguide/6.ipynb)
 - 用户指南，第7章：和弦
-- 用户指南，第8章：安装MusicXML阅读器与文件格式(1)
+- 用户指南，第8章：安装MusicXML阅读器，文件格式(1)
 - 用户指南，第9章：和弦化
 - 用户指南，第10章：示例1
 - 用户指南，第11章：在乐谱库中搜索
