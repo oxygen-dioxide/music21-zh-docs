@@ -16,9 +16,9 @@ music21是一款python乐理分析库，支持多种输入与输出格式，并�
 ### 在线运行
 - [在Gitpod上运行](setup\gitpod\readme.md)
 
-以下是music21文档目录，[原文链接](https://web.mit.edu/music21/doc/index.html#)
-
 ## music21文档目录
+[原文链接](https://web.mit.edu/music21/doc/index.html#)
+
 
 #### 关于music21
 - [music21是什么？](about/music21是什么.ipynb)
