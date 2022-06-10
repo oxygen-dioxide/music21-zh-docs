@@ -1,5 +1,4 @@
-sudo apt update
-# sudo apt upgrade -y
+sudo apt upgrade -y
 
 #安装python
 sudo apt install python3 -y

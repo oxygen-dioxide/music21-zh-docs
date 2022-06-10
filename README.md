@@ -3,10 +3,11 @@
 [gitee](https://gitee.com/oxygendioxide/music21-zh-docs) | 
 [gitlab](https://gitlab.com/oxygen-dioxide/music21-zh-docs) | 
 [bitbucket](https://bitbucket.org/oxygendioxide/music21-zh-docs/src/main/) | 
-[coding](https://oxygen-dioxide.coding.net/public/1/music21-zh-docs/git/files)
+[coding](https://oxygen-dioxide.coding.net/public/1/music21-zh-docs/git/files) | 
+[jihulab](https://jihulab.com/oxygen-dioxide/music21-zh-docs)
 
 ## 关于本仓库
-music21是一款python乐理分析库，支持多种输入与输出格式，并良好适配了Jupyter Notebook，支持直接在页面上显示五线谱。
+music21是一款python乐理分析库，支持多种输入与输出格式，并适配了Jupyter Notebook，支持直接在页面上显示五线谱。
 
 本仓库为[music21](https://pypi.org/project/music21/)文档的中文翻译。如果你发现了错误，或者有更好的翻译方式，欢迎提出[Issue](https://github.com/oxygen-dioxide/music21-zh-docs/issues)和[Pull Request](https://github.com/oxygen-dioxide/music21-zh-docs/pulls)。
 
