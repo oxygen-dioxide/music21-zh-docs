@@ -19,10 +19,11 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-
-    - name: install python requirements
-      run: pip install -r requirements.txt
     
+    - name: install winget (windows)
+      if: matrix.os.runs-on == 'windows-latest'
+      uses: Cyberboss/install-winget@v1
+
     - name: install musescore3 (windows)
       if: matrix.os.runs-on == 'windows-latest'
       run: winget install Musescore.Musescore.3 -e
@@ -34,6 +35,9 @@ jobs:
     - name: install musescore3 (ubuntu)
       if: matrix.os.runs-on == 'ubuntu-latest'
       run: sudo apt-get install musescore3 -y
+
+    - name: install python requirements
+      run: pip install -r requirements.txt
 
     - name: test
       shell: pwsh
