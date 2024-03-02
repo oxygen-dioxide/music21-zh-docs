@@ -32,7 +32,7 @@ jobs:
     
     - name: install musescore (ubuntu)
       if: matrix.os.runs-on == 'ubuntu-latest'
-      run: sudo apt-get install musescore=3.6 -y
+      run: sudo apt-get install musescore3 -y
 
     - name: test
       shell: pwsh
