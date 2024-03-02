@@ -24,15 +24,15 @@ jobs:
     
     - name: install musescore (windows)
       if: matrix.os.runs-on == 'windows-latest'
-      run: choco install musescore -y
+      run: winget install Musescore.Musescore.3 -e
 
     - name: install musescore (macos)
       if: matrix.os.runs-on == 'macos-latest'
-      run: brew install musescore
+      run: brew install musescore@3.6
     
     - name: install musescore (ubuntu)
       if: matrix.os.runs-on == 'ubuntu-latest'
-      run: sudo apt-get install musescore -y
+      run: sudo apt-get install musescore=3.6 -y
 
     - name: test
       shell: pwsh
