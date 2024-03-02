@@ -19,14 +19,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    
-    - name: install winget (windows)
-      if: matrix.os.runs-on == 'windows-latest'
-      uses: Cyberboss/install-winget@v1
 
     - name: install musescore3 (windows)
       if: matrix.os.runs-on == 'windows-latest'
-      run: winget install Musescore.Musescore.3 -e
+      run: choco install musescore --version=3.6.2.548021803
 
     - name: install musescore3 (macos)
       if: matrix.os.runs-on == 'macos-latest'
