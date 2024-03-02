@@ -22,15 +22,15 @@ jobs:
     - name: install python requirements
       run: pip install -r requirements.txt
     
-    - name: install musescore (windows)
+    - name: install musescore3 (windows)
       if: matrix.os.runs-on == 'windows-latest'
       run: winget install Musescore.Musescore.3 -e
 
-    - name: install musescore (macos)
+    - name: install musescore3 (macos)
       if: matrix.os.runs-on == 'macos-latest'
-      run: brew install musescore@3.6
+      run: brew install musescore@3.6.2.548020600
     
-    - name: install musescore (ubuntu)
+    - name: install musescore3 (ubuntu)
       if: matrix.os.runs-on == 'ubuntu-latest'
       run: sudo apt-get install musescore3 -y
 
