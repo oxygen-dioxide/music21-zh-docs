@@ -24,4 +24,4 @@ jobs:
 
     - name: test
       shell: pwsh
-      run: ls | foreach { echo $_; jupyter nbconvert --to python --execute $_ } 
+      run: ls userguide/*.ipynb | foreach { echo $_; jupyter nbconvert --to python --execute $_ } 
