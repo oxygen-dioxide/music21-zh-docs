@@ -21,6 +21,18 @@ jobs:
 
     - name: install python requirements
       run: pip install -r requirements.txt
+    
+    - name: install musescore (windows)
+      if: matrix.os.runs-on == 'windows-latest'
+      run: choco install musescore -y
+
+    - name: install musescore (macos)
+      if: matrix.os.runs-on == 'macos-latest'
+      run: brew install musescore
+    
+    - name: install musescore (ubuntu)
+      if: matrix.os.runs-on == 'ubuntu-latest'
+      run: sudo apt-get install musescore -y
 
     - name: test
       shell: pwsh
