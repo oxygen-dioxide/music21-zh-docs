@@ -52,7 +52,17 @@ jobs:
     - name: test
       shell: pwsh
       run: |
+        $failed = $false
         ls userguide/*.ipynb | foreach { 
-          echo $_;
+          Write-Host "Processing $($_.FullName)"
           jupyter nbconvert --to python --execute $_ --TagRemovePreprocessor.enabled=True --TagRemovePreprocessor.remove_cell_tags assert_error
-        } 
+          $exitCode = $LASTEXITCODE
+          if ($exitCode -ne 0) {
+              Write-Error "Error executing $($_.FullName). Exit code: $exitCode"
+              $failed = $true
+          }
+        }
+        if ($failed) {
+          Write-Error "One or more Notebooks failed to execute."
+          exit 1
+        }
