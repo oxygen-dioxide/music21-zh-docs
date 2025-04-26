@@ -39,6 +39,14 @@ jobs:
       if: matrix.os.runs-on == 'windows-latest'
       run: python test/configurem21_windows.py
 
+    #在本仓库的ipynb文件中，大部分代码块应该能正常运行，
+    #但是有些代码块用于演示错误的代码，因此需要在测试时排除
+    #这些代码块用 tag assert_error 标注
     - name: test
       shell: pwsh
-      run: ls userguide/*.ipynb | foreach { echo $_; jupyter nbconvert --to python --execute $_ } 
+      run: |
+        ls userguide/*.ipynb | foreach { 
+          echo $_;
+          jupyter nbconvert $_ --TagRemovePreprocessor.enabled=True --TagRemovePreprocessor.remove_cell_tags assert_error
+          jupyter nbconvert --to python --execute $_
+        } 
