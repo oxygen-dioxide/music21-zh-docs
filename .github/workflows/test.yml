@@ -18,6 +18,7 @@ jobs:
             arch: linux-x64
         
         python-version: ['3.10', '3.11', '3.12']
+        musescore-version: ['3', '4']
 
     steps:
     - uses: actions/checkout@v1
@@ -27,24 +28,24 @@ jobs:
       with:
         python-version: '${{ matrix.python-version }}'
 
-    - name: install musescore3 (windows)
+    - name: install musescore (windows)
       if: matrix.os.runs-on == 'windows-latest'
-      run: choco install musescore --version=3.6.2.548021803
+      run: choco install musescore --version=${{ matrix.musescore-version }}
 
-    - name: install musescore3 (macos)
+    - name: install musescore (macos)
       if: matrix.os.runs-on == 'macos-latest'
-      run: brew install musescore@3.6.2.548020600
+      run: brew install musescore@${{ matrix.musescore-version }}
     
-    - name: install musescore3 (ubuntu)
+    - name: install musescore (ubuntu)
       if: matrix.os.runs-on == 'ubuntu-latest'
-      run: sudo apt-get install musescore3 -y
+      run: sudo apt-get install musescore${{ matrix.musescore-version }} -y
 
     - name: install python requirements
       run: pip install -r requirements.txt
     
     - name: configure music21 (windows)
       if: matrix.os.runs-on == 'windows-latest'
-      run: python test/configurem21_windows.py
+      run: python test/configurem21_windows.py --musescore-version ${{ matrix.musescore-version }}
 
     #在本仓库的ipynb文件中，大部分代码块应该能正常运行，
     #但是有些代码块用于演示错误的代码，因此需要在测试时排除

@@ -1,10 +1,4 @@
 # Music21中文文档
-[github](https://github.com/oxygen-dioxide/music21-zh-docs) | 
-[gitee](https://gitee.com/oxygendioxide/music21-zh-docs) | 
-[gitlab](https://gitlab.com/oxygen-dioxide/music21-zh-docs) | 
-[bitbucket](https://bitbucket.org/oxygendioxide/music21-zh-docs/src/main/) | 
-[coding](https://oxygen-dioxide.coding.net/public/1/music21-zh-docs/git/files) | 
-[jihulab](https://jihulab.com/oxygen-dioxide/music21-zh-docs)
 
 ## 关于本仓库
 music21是一款python乐理分析库，支持多种输入与输出格式，并适配了Jupyter Notebook，支持直接在页面上显示五线谱。
@@ -60,32 +54,12 @@ music21是一款python乐理分析库，支持多种输入与输出格式，并�
 - 用户指南，第30章：
 - [用户指南，第31章：谱号、连音符和符尾连线](userguide/31.ipynb)
 - 用户指南，第32章：
-- 用户指南，第33章：
-- 用户指南，第34章：
-- 用户指南，第35章：
-- 用户指南，第36章：
-- 用户指南，第37章：
-- 用户指南，第38章：
-- 用户指南，第39章：
-- 用户指南，第40章：
-- 用户指南，第41章：
-- 用户指南，第42章：
-- 用户指南，第43章：
 - 用户指南，第44章：
-- 用户指南，第45章：
-- 用户指南，第46章：
-- 用户指南，第47章：
-- 用户指南，第48章：
-- 用户指南，第49章：
-- 用户指南，第50章：
-- 用户指南，第51章：
-- 用户指南，第52章：
 - 用户指南，第53章：
-- 用户指南，第54章：
+- [用户指南，第54章：添加更多文件格式的支持](userguide/54.ipynb)
 - 用户指南，第55章：
-- 用户指南，第56章：
-- 用户指南，第57章：
 - 用户指南，第58章：
+- 用户指南，第61章：
 
 ### 模块参考
 #### 安装
