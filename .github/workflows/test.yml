@@ -54,6 +54,5 @@ jobs:
       run: |
         ls userguide/*.ipynb | foreach { 
           echo $_;
-          jupyter nbconvert $_ --TagRemovePreprocessor.enabled=True --TagRemovePreprocessor.remove_cell_tags assert_error
-          jupyter nbconvert --to python --execute $_
+          jupyter nbconvert --to python --execute $_ --TagRemovePreprocessor.enabled=True --TagRemovePreprocessor.remove_cell_tags assert_error
         } 
