@@ -31,7 +31,7 @@
 是，也不是。music21处理符号音乐而不是音频波型。但是，符号音乐数据可以在很多音频合成系统中使用。所以，你可以用music21对象调用其他合成包来合成。
 
 ### music21可以直接从图片或pdf读入乐谱吗？
-抱歉，这超出了music21的能力范围。这个技术叫OMR（Optical Music Recognition，光学乐谱识别），是一个完整的，独立的研究领域。Audiveris是一个开源的OMR套件，其开发团队已经在开发商业软件SmartScore的过程中获得了经验。music21有一套模块用于优化OMR的输出结果，参见[music21.omr.correctors](https://web.mit.edu/music21/doc/moduleReference/moduleOmrCorrectors.html#moduleomrcorrectors)
+抱歉，这超出了music21的能力范围。这个技术叫OMR（Optical Music Recognition，光学乐谱识别），是一个完整的，独立的研究领域。Audiveris是一个开源的OMR套件，其开发团队已经在开发商业软件SmartScore的过程中获得了经验。music21有一套模块用于优化OMR的输出结果，参见[music21.omr.correctors](https://www.music21.org/music21docs/moduleReference/moduleOmrCorrectors.html#moduleomrcorrectors)
 
 ### 我想尝试music21，如何安装？
 [用户指南，第1章：安装与上手music21](../userguide/1.ipynb)

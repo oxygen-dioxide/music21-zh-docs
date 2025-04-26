@@ -1,5 +1,5 @@
 # 在Windows上安装music21
-[原文链接](https://web.mit.edu/music21/doc/installing/installWindows.html)
+[原文链接](https://www.music21.org/music21docs/installing/installWindows.html)
 
 ## 获取Python
 Python是一款简单但强大的编程语言。music21即基于Python开发，在本教程中，你将会用Python和music21开发自己的程序。
