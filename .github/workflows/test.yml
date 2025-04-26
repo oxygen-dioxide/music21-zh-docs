@@ -54,11 +54,10 @@ jobs:
       run: |
         $failed = $false
         ls userguide/*.ipynb | foreach { 
-          Write-Host "Processing $($_.FullName)"
+          echo $_
           jupyter nbconvert --to python --execute $_ --TagRemovePreprocessor.enabled=True --TagRemovePreprocessor.remove_cell_tags assert_error
           $exitCode = $LASTEXITCODE
           if ($exitCode -ne 0) {
-              Write-Error "Error executing $($_.FullName). Exit code: $exitCode"
               $failed = $true
           }
         }
