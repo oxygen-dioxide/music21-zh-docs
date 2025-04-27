@@ -21,8 +21,6 @@ jobs:
         musescore:
           - main-version: "3"
             apt-package: "musescore3"
-          - main-version: "4"
-            apt-package: "musescore"
 
     steps:
     - uses: actions/checkout@v1
