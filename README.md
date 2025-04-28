@@ -50,7 +50,7 @@ music21是一款python乐理分析库，支持多种输入与输出格式，并�
 - 用户指南，第26章：
 - 用户指南，第27章：
 - 用户指南，第28章：
-- 用户指南，第29章：
+- [用户指南，第29章：圆滑线](userguide/29.ipynb)
 - 用户指南，第30章：
 - [用户指南，第31章：谱号、延音线和符尾连线](userguide/31.ipynb)
 - 用户指南，第32章：
@@ -79,8 +79,8 @@ music21是一款python乐理分析库，支持多种输入与输出格式，并�
 - 正在施工中的文档和测试
 
 ## 相关链接
-[Music21 官网](https://www.music21.org/)
-[Music21 源代码](https://github.com/cuthbertLab/music21)
-[Music21 文档主页](https://www.music21.org/music21docs/index.html)
-[Music21 文档源代码](https://github.com/cuthbertLab/music21/tree/master/documentation/source)
-[Music21 PYPI 页面](https://pypi.org/project/music21/)
+- [Music21 官网](https://www.music21.org/)
+- [Music21 源代码](https://github.com/cuthbertLab/music21)
+- [Music21 文档主页](https://www.music21.org/music21docs/index.html)
+- [Music21 文档源代码](https://github.com/cuthbertLab/music21/tree/master/documentation/source)
+- [Music21 PYPI 页面](https://pypi.org/project/music21/)
