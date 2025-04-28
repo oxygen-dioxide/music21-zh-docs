@@ -22,7 +22,7 @@
 但如果你必须储存你的music21数据，以下是一些建议：
 
 - 对于可以快速并准确重建的数据，把生成该数据的脚本作为数据存储。
-- 如需存储音乐符号，musicXML可满足大多数情况。如需存储音频或乐谱图像，可以使用MIDI或Lilipond->PNG
+- 如需存储音乐符号，MusicXML可满足大多数情况。如需存储音频或乐谱图像，可以使用MIDI或Lilipond->PNG。（译者注：midi不是音频格式，如需导出音频，可使用Musescore打开MusicXML，导出为wav。）
 - 对于不能简单地重建的数据（因为重建的成本太高，依赖用户输入，或者随机生成），可以使用Python的pickle包存储数据。所存储的文件可能无法被其他版本的music21读入，所以不应用于长期储存。在使用`pickle.dump(yourStream)`保存文件前，请先运行`setupSerializationScaffold()`。在使用`pickle.load(yourStream)`加载文件后，请运行`teardownSerializationScaffold()`。这样可以几乎完整地保存所有信息
 - 对于不能简单地重建，但又要长期储存或分享的数据，可将你需要的部分保存为XML、json或CSV。参见plistlib[https://docs.python.org/dev/library/plistlib.html](https://docs.python.org/dev/library/plistlib.html)或[https://code.activestate.com/recipes/440595](https://code.activestate.com/recipes/440595)。如果存储完整的python数据结构有困难，可以仅存储难以重建的部分。Music21对使用JSON存储Stream提供了一定的支持，但尚不完善。
 - 如果你需要存储的数据结构太复杂，不能用以上方法存储，那么你应该有足够的经验自己创建一个数据格式。请考虑将你的解决方案贡献到music21以帮助我们改进。

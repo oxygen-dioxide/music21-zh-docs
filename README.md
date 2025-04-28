@@ -3,7 +3,7 @@
 ## 关于本仓库
 music21是一款python乐理分析库，支持多种输入与输出格式，并适配了Jupyter Notebook，支持直接在页面上显示五线谱。
 
-本仓库为[music21](https://pypi.org/project/music21/)文档的中文翻译。如果你发现了错误，或者有更好的翻译方式，欢迎提出[Issue](https://github.com/oxygen-dioxide/music21-zh-docs/issues)和[Pull Request](https://github.com/oxygen-dioxide/music21-zh-docs/pulls)。
+本仓库为[music21](https://pypi.org/project/music21/)[文档](https://www.music21.org/music21docs/index.html)的中文翻译。如果你发现了错误，或者有更好的翻译方式，欢迎[向我反馈](https://github.com/oxygen-dioxide/music21-zh-docs/issues)或[提交贡献](https://github.com/oxygen-dioxide/music21-zh-docs/pulls)。
 
 本仓库的大部分文档为Jupyter Notebook（.ipynb）格式，按照[这篇文章](https://gitee.com/oxygendioxide/pyvogen-docs/blob/main/%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE.md#jupyter-notebook%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE)的方法配置好后，即可下载运行。所有文章均在我的电脑上重新运行，因此某些输出可能与原文有区别（例如文件路径、乐谱输出格式等），不影响使用。
 
@@ -36,10 +36,10 @@ music21是一款python乐理分析库，支持多种输入与输出格式，并�
 - 用户指南，第11章：在乐谱库中搜索
 - 用户指南，第12章：回到基础：music21对象（Music21Object）
 - 用户指南，第13章：更多的music21对象属性
-- 用户指南，第14章：曲速与节拍
+- 用户指南，第14章：节拍
 - 用户指南，第15章：调性与调号
 - 用户指南，第16章：TinyNotation
-- 用户指南，第17章：
+- [用户指南，第17章：派生](17.ipynb)
 - 用户指南，第18章：
 - 用户指南，第19章：
 - 用户指南，第20章：
@@ -52,7 +52,7 @@ music21是一款python乐理分析库，支持多种输入与输出格式，并�
 - 用户指南，第28章：
 - 用户指南，第29章：
 - 用户指南，第30章：
-- [用户指南，第31章：谱号、连音符和符尾连线](userguide/31.ipynb)
+- [用户指南，第31章：谱号、延音线和符尾连线](userguide/31.ipynb)
 - 用户指南，第32章：
 - 用户指南，第44章：
 - 用户指南，第53章：
@@ -77,3 +77,10 @@ music21是一款python乐理分析库，支持多种输入与输出格式，并�
 - 用git协助开发music21
 - 第三方MusicXML测试套件
 - 正在施工中的文档和测试
+
+## 相关链接
+[Music21 官网](https://www.music21.org/)
+[Music21 源代码](https://github.com/cuthbertLab/music21)
+[Music21 文档主页](https://www.music21.org/music21docs/index.html)
+[Music21 文档源代码](https://github.com/cuthbertLab/music21/tree/master/documentation/source)
+[Music21 PYPI 页面](https://pypi.org/project/music21/)
