@@ -84,3 +84,5 @@ music21是一款python乐理分析库，支持多种输入与输出格式，并�
 - [Music21 文档主页](https://www.music21.org/music21docs/index.html)
 - [Music21 文档源代码](https://github.com/cuthbertLab/music21/tree/master/documentation/source)
 - [Music21 PYPI 页面](https://pypi.org/project/music21/)
+
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/oxygen-dioxide/music21-zh-docs)
