@@ -58,7 +58,9 @@ jobs:
     
     - name: install musescore (ubuntu)
       if: matrix.os.os == 'linux'
-      run: sudo apt-get install ${{ matrix.musescore.apt-package }} -y
+      run: |
+        sudo apt-get update
+        sudo apt-get install ${{ matrix.musescore.apt-package }} -y
 
     - name: install python requirements
       run: pip install -r requirements.txt
