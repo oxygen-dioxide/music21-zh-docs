@@ -34,7 +34,10 @@ jobs:
           - main-version: "3"
             apt-package: "musescore3"
         exclude:
-          - arch: win-arm64
+          - os: 
+            - runs-on: windows-11-arm
+              arch: win-arm64
+              os: windows
             python-version: '3.10'
 
     steps:
