@@ -33,6 +33,9 @@ jobs:
         musescore:
           - main-version: "3"
             apt-package: "musescore3"
+        exclude:
+          - os.runs-on: windows-11-arm
+            python-version: 3.10
 
     steps:
     - uses: actions/checkout@v1
