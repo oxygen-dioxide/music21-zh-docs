@@ -54,7 +54,9 @@ jobs:
 
     - name: install musescore (macos)
       if: matrix.os.os == 'mac'
-      run: brew install --cask musescore
+      run: |
+        brew tap homebrew/cask-versions
+        brew install --cask musescore3
     
     - name: install musescore (ubuntu)
       if: matrix.os.os == 'linux'
