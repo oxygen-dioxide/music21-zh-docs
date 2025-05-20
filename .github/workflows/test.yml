@@ -48,7 +48,7 @@ jobs:
 
     - name: install musescore (macos)
       if: matrix.os.os == 'mac'
-      run: brew install musescore@${{ matrix.musescore.main-version }}
+      run: brew install --cask musescore@${{ matrix.musescore.main-version }}
     
     - name: install musescore (ubuntu)
       if: matrix.os.os == 'linux'
