@@ -42,13 +42,19 @@ jobs:
       with:
         python-version: '${{ matrix.python-version }}'
 
+    - name: Install C++ Build Tools
+      if: matrix.os.os == 'windows'
+      run: |
+        choco install visualstudio2022buildtools
+        choco install ninja
+
     - name: install musescore (windows)
       if: matrix.os.os == 'windows'
       run: choco install musescore --version=${{ matrix.musescore.main-version }}
 
     - name: install musescore (macos)
       if: matrix.os.os == 'mac'
-      run: brew install --cask musescore@${{ matrix.musescore.main-version }}
+      run: brew install --cask musescore
     
     - name: install musescore (ubuntu)
       if: matrix.os.os == 'linux'
