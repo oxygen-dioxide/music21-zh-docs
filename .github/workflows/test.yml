@@ -39,11 +39,11 @@ jobs:
       with:
         python-version: '${{ matrix.python-version }}'
 
-    - name: Install C++ Build Tools
-      if: matrix.os == 'windows-latest' || matrix.os == 'windows-11-arm'
-      run: |
-        choco install visualstudio2022buildtools
-        choco install ninja
+    #- name: Install C++ Build Tools
+    #  if: matrix.os == 'windows-latest' || matrix.os == 'windows-11-arm'
+    #  run: |
+    #    choco install visualstudio2022buildtools
+    #    choco install ninja
 
     - name: install musescore (windows)
       if: matrix.os == 'windows-latest' || matrix.os == 'windows-11-arm'
@@ -60,11 +60,16 @@ jobs:
       run: |
         sudo apt-get update
         sudo apt-get install ${{ matrix.musescore.apt-package }} -y
+    
+    - name: download wheels (windows arm)
+      if: matrix.os == 'windows-11-arm'
+      uses: carlosperate/download-file-action@v2
+      with:
+        file-url: https://github.com/oxygen-dioxide/wheels/raw/refs/heads/main/${{ matrix.os }}/python${{ matrix.python-version }}/matplotlib.whl
 
     - name: install wheels (windows arm)
       if: matrix.os == 'windows-11-arm'
       run: |
-        wget https://github.com/oxygen-dioxide/wheels/raw/refs/heads/main/${{ matrix.os }}/python${{ matrix.python-version }}/matplotlib.whl
         pip install matplotlib.whl
 
     - name: install python requirements
