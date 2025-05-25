@@ -17,13 +17,17 @@ jobs:
           - ubuntu-latest
           - ubuntu-24.04-arm
         
-        python-version: ['3.10', '3.11', '3.12']
+        python-version: ['3.10', '3.11', '3.12', '3.13']
         musescore:
           - main-version: "3"
             apt-package: "musescore3"
         exclude:
           - os: windows-11-arm
             python-version: '3.10'
+          - os: windows-11-arm
+            python-version: '3.11'
+          - os: windows-11-arm
+            python-version: '3.12'
 
     steps:
     - uses: actions/checkout@v1
