@@ -26,8 +26,10 @@ jobs:
             python-version: '3.10'
           - os: windows-11-arm
             python-version: '3.11'
+          - os: windows-latest
+            python-version: '3.13'
           - os: windows-11-arm
-            python-version: '3.12'
+            python-version: '3.13'
 
     steps:
     - uses: actions/checkout@v1
@@ -58,6 +60,12 @@ jobs:
       run: |
         sudo apt-get update
         sudo apt-get install ${{ matrix.musescore.apt-package }} -y
+
+    - name: install wheels (windows arm)
+      if: matrix.os == 'windows-11-arm'
+      run: |
+        wget https://github.com/oxygen-dioxide/wheels/raw/refs/heads/main/${{ matrix.os }}/python${{ matrix.python-version }}/matplotlib.whl
+        pip install matplotlib.whl
 
     - name: install python requirements
       run: pip install -r requirements.txt
