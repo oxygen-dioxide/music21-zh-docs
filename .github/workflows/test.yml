@@ -56,7 +56,9 @@ jobs:
 
     - name: install musescore (windows)
       if: matrix.os == 'windows-latest' || matrix.os == 'windows-11-arm'
-      run: winget install ${{ matrix.musescore.winget-package }}
+      run: |
+        winget source remove msstore
+        winget install ${{ matrix.musescore.winget-package }}
 
     - name: install musescore (macos)
       if: matrix.os == 'macos-13' || matrix.os == 'macos-15'
