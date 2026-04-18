@@ -1,3 +1,4 @@
 music21
 jupyter
 click
+scipy

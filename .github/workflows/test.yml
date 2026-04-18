@@ -26,6 +26,8 @@ jobs:
             python-version: '3.10'
           - os: windows-11-arm
             python-version: '3.11'
+          - os: windows-12-arm
+            python-version: '3.12'
           - os: windows-latest
             python-version: '3.13'
           - os: windows-11-arm
@@ -60,17 +62,6 @@ jobs:
       run: |
         sudo apt-get update
         sudo apt-get install ${{ matrix.musescore.apt-package }} -y
-    
-    - name: download wheels (windows arm)
-      if: matrix.os == 'windows-11-arm'
-      uses: carlosperate/download-file-action@v2
-      with:
-        file-url: https://github.com/oxygen-dioxide/wheels/raw/refs/heads/main/${{ matrix.os }}/python${{ matrix.python-version }}/matplotlib.whl
-
-    - name: install wheels (windows arm)
-      if: matrix.os == 'windows-11-arm'
-      run: |
-        pip install matplotlib.whl
 
     - name: install python requirements
       run: pip install -r requirements.txt
