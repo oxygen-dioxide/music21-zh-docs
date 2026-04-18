@@ -27,6 +27,7 @@ jobs:
         musescore:
           - main-version: "3"
             apt-package: "musescore3"
+            winget-package: "Musescore.Musescore.3"
         exclude:
           - os: windows-11-arm
             python-version: '3.10'
@@ -55,7 +56,7 @@ jobs:
 
     - name: install musescore (windows)
       if: matrix.os == 'windows-latest' || matrix.os == 'windows-11-arm'
-      run: choco install musescore --version=${{ matrix.musescore.main-version }}
+      run: winget install ${{ matrix.musescore.winget-package }}
 
     - name: install musescore (macos)
       if: matrix.os == 'macos-13' || matrix.os == 'macos-15'
